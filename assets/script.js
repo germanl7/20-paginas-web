@@ -1,0 +1,1 @@
+document.querySelectorAll('.card').forEach((c,i)=>{c.style.transitionDelay=(i*25)+'ms'});const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.style.opacity=1}),{threshold:.08});document.querySelectorAll('.card,.feature').forEach(e=>{e.style.opacity=.01;obs.observe(e)});
